@@ -1,5 +1,69 @@
-import calc
-print(dir(calc))
+""" def prt_func() :
+    print("hello")
+
+def callfunc(fx) :
+		fx()
+
+callfunc(prt_func) """
+
+"""def prt_func(n) :
+    print("hello", n)
+
+def callfunc(fx) :
+    for i in range(5) :
+        fx(i)
+
+callfunc(prt_func)
+
+def update_msg(name: str) -> list:
+    msg = []
+    msg.append("Hello, " + name)
+    msg.append("Bye, " + name)
+    return msg
+
+def greeting(in_name: str) -> list:
+    gt_msg = None
+    gt_msg = update_msg(in_name)
+    return gt_msg 
+
+res = greeting("Python")
+
+for message in res:
+    print(message)"""
+
+""" def fun(n) :
+    if n == 5 :
+        return
+    
+    print(1, n)
+    fun(n+1)
+    #print(2, n)
+    
+fun(1)"""
+
+""" def ploop(n) :
+    if n == 0 :
+        print("end")
+        return 1
+    else :
+        print(n, n-1, "=", n + n-1)
+        return n * ploop(n-1)
+print(ploop(5)) """
+
+""" def fibonacci(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        print(n)
+        return fibonacci(n-1) + fibonacci(n-2)
+
+res = fibonacci(4)
+print("res =", res) """
+
+"""import calc
+print(dir(calc))"""
 
 """import calc
 add_res = calc.add(8, 4)
@@ -23,24 +87,24 @@ print(cl.div(8, 4))"""
 
 print(cm.pi)
 print(cm.cc_area(4))
-print(cm.cc_len(5))
+print(cm.cc_len(5))"""
 
-import mod.str_util as smod
+"""import mod.str_util as smod
 
 url = "https://www.notion.so/test/4-1/a1fe5ef0df1/41f7a1aa9ec01/3a859a"
-res = smod.cutword(url, "/", 3)
+res = smod.cutword(url, "/", 3)"""
 
-def cutstr(st, wd, idx) :
+"""def cutstr(st, wd, idx) :
     tmp = st.split(wd)
     res = tmp[idx]
     return res
 
 url = "https://www.notion.so/test/4-1/a1fe5ef0df1/41f7a1aa9ec01/3a859a"
-res = smod.cutword(url, "/", 3)
-print(res)
+rs = cutstr(url, "/", 3)
+print(rs)"""
 
 
-import mod.str_util as smod
+"""import mod.str_util as smod
 
 url = "https://www.notion.so/test/4-1/a1fe5ef0df1/41f7a1aa9ec01/3a859a"
 res = smod.cutword(url, "/", 3)"""
@@ -59,11 +123,14 @@ exp_res = math.exp(3)
 print(exp_res)
 
 pi_res = math.pi
-print(pi_res)"""
+print(pi_res)
+
+fc_res = math.factorial(4)
+print(fc_res)"""
 
 """import mod.utils as mu
 
-res = mu.mt.sqrt(2)
+res = mu.mt_sqrt(2)
 print(res)
 
 sin = mu.mt_sinpi()
@@ -78,7 +145,7 @@ print(ep)
 pi = mu.mt_pi()
 print(pi)"""
 
-import random as rd
+"""import random as rd
 
 res = rd.randint(1, 100)
 print(res)
@@ -91,4 +158,11 @@ fres = rd.random()
 print(fres)
 
 nvres = rd.normalvariate()
-print(nvres)
+print(nvres)"""
+
+import mod.utils as mu
+my_list = ["apple", "banana", "cherry"]
+print(mu.rd_int(1, 100))
+print(mu.rd_list(my_list))
+print(mu.rd_rd())
+print(mu.rd_nmvar())

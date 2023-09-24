@@ -1,7 +1,34 @@
-import math as mt
-import random as rd
+import math 
+import random 
 
-res = rd.randint(1, 100)
+def mt_sqrt(x) :
+    return math.sqrt(x)
+
+def mt_sinpi() :
+    return math.sin(math.pi / 2)
+
+def mt_elog() :
+    return math.log(math.e)
+
+def mt_exp(x) :
+    return math.exp(x)
+
+def mt_pi() :
+    return math.pi
+
+def rd_int(x, y) :
+    return random.randint(x, y)
+
+def rd_list(this) :
+    return random.choice(this)
+
+def rd_rd() :
+    return random.random()
+
+def rd_nmvar() :
+    return random.normalvariate(0, 1)
+
+"""res = rd.randint(1, 100)
 print(res)
 
 my_list = ["apple", "banana", "cherry"]
@@ -27,4 +54,4 @@ exp_res = mt.exp(3)
 print(exp_res)
 
 pi_res = mt.pi
-print(pi_res)
+print(pi_res)"""
