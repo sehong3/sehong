@@ -145,7 +145,7 @@ print(res)
 df["품종"].value_counts()"""
 
 
-# 데이터 시각화
+"""# 데이터 시각화
 
 import matplotlib.pyplot as plt
 
@@ -205,6 +205,75 @@ dic_val = {"x_data": [2,3,6,7,10], "y_data": [1,4,5,8,9]}
 
 plt.plot("x_data", "y_data", data=dic_val, label="PData(km)")
 plt.legend()
-plt.show()
 
 plt.legend(loc="lower right")
+#plt.legend(loc="best")
+plt.show()
+
+# 라벨 출력 조절
+plt.legend(ncol=1)
+#plt.legend(ncol=2)
+#plt.show()
+
+# 폰트 조절
+plt.legend(ncol=2, fontsize=10)
+#plt.show()
+
+# 테두리 설정
+#plt.legend(ncol=2, fontsize=10, frameon=True)
+#plt.show()
+
+# 테두리 음영 설정
+plt.legend(ncol=2, fontsize=10, shadow=True)
+#plt.show()
+
+# 축 범위 지정
+dic_val = {"x_data": [2,3,6,7,10], "y_data": [1,4,5,8,9]}
+
+plt.plot("x_data", "y_data", data=dic_val)
+plt.xlabel("x_data")
+plt.ylabel("y_data")
+
+plt.xlim()
+plt.ylim()
+
+#plt.show()
+
+# 현재 축 범위 출력
+x_min, x_max = plt.xlim()
+y_min, y_max = plt.ylim()
+print(x_min, x_max)
+print(y_min, y_max)
+
+# 축 계산
+plt.xlim(x_min - 0.6, x_max)
+plt.ylim(y_min - 0.6, y_max)
+
+# 축 범위 지정
+plt.xlim([0, 10])
+plt.ylim([0, 10])
+
+plt.axis([0, 10, 0, 10])
+
+x_min, x_max, ymin, ymax = plt.axis()
+print(x_min, x_max, y_min, y_max)
+
+# 축 출력 옵션 지정
+#plt.axis("square")
+#plt.axis("scaled")
+#plt.axis("equal")
+#plt.axis("tight")
+#plt.axis("auto")
+#plt.axis("on")
+#plt.axis("off")
+
+# 선 스타일 설정
+
+# 선 스타일 지정
+plt.plot([2,3,6,7,10], [1,4,5,8,9], "-", label="PData(km)")
+#plt.plot([2,3,6,7,10], [1,4,5,8,9], "--", label="PData(km)")
+
+plt.plot([2,3,6,7,10], [1,4,5,8,9], linestyle="solid", label="PData(km)")
+#plt.plot([2,3,6,7,10], [1,4,5,8,9], linestyle="dashed", label="PData(km)")
+#plt.plot([2,3,6,7,10], [1,4,5,8,9], linestyle="dotted", label="PData(km)")
+#plt.plot([2,3,6,7,10], [1,4,5,8,9], linestyle="dashdot", label="PData(km)")"""
